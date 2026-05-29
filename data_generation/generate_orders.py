@@ -1,7 +1,7 @@
 from pyspark.sql.functions import *
 import time
 
-def generate_orders(batch_size=50000):
+def generate_orders(spark, batch_size=50000):
 
     df = (
         spark.range(batch_size)
