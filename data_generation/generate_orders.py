@@ -54,7 +54,7 @@ def generate_orders(spark, batch_size=50000):
     timestamp = int(time.time())
 
     output_path = (
-        f"/FileStore/raw/orders/orders_{timestamp}"
+        f"/Volumes/retail/landing/orders/orders_{timestamp}"
     )
 
     (
